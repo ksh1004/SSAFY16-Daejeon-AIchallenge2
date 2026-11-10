@@ -1,0 +1,21 @@
+{
+  "model_id": "google/gemma-4-31B-it",
+  "stage": "01_base_train",
+  "stage_label": "기본 데이터",
+  "full_rows": 6714,
+  "train_rows": 6378,
+  "valid_rows": 336,
+  "smoke_test": false,
+  "best_valid_loss": 0.05128279903481598,
+  "checkpoint_every_updates": 100,
+  "history": [
+    {
+      "stage": "01_base_train",
+      "epoch": 1,
+      "train_loss": 0.47686629584112905,
+      "valid_loss": 0.05128279903481598,
+      "valid_accuracy": 0.9765625,
+      "peak_vram_gb": 27.126953125
+    }
+  ]
+}

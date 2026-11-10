@@ -1,0 +1,86 @@
+{
+  "model_id": "Qwen/Qwen3.8-27B",
+  "quant_mode": "bf16",
+  "vram_budget_gb": 90.0,
+  "load_sec": 166.1752986907959,
+  "params_b": 27.35672856,
+  "mem_after_load_gb": 50.955976486206055,
+  "mem_after_lora_gb": 51.39765739440918,
+  "n_lora_modules": 496,
+  "augmentation": {
+    "enabled": true,
+    "mode": "random_view",
+    "variant_rows_available": 54264,
+    "sources_with_variants": 6039,
+    "train_dataset_length": 6039,
+    "view_probability": 0.7
+  },
+  "probe": [
+    {
+      "max_pixels": 802816,
+      "side": 896,
+      "seq_len": 1193,
+      "seconds": 43.17906332015991,
+      "peak_alloc_gb": 56.05065679550171,
+      "peak_reserved_gb": 56.765625,
+      "estimated_adam_gb": 0.86968994140625,
+      "estimated_total_gb": 59.13531494140625,
+      "loss": 0.002073935465887189
+    }
+  ],
+  "selected_max_pixels": 802816,
+  "selected_side": 896,
+  "baseline": {
+    "epoch": 0,
+    "train_loss": NaN,
+    "valid_loss": 0.07130531721195439,
+    "valid_accuracy": 0.9437037037037037,
+    "invalid": 0
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": NaN,
+      "valid_loss": 0.07130531721195439,
+      "valid_accuracy": 0.9437037037037037,
+      "invalid": 0
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.054272380186985755,
+      "valid_loss": 0.048621639336809123,
+      "valid_accuracy": 0.9481481481481482,
+      "invalid": 0,
+      "peak_reserved_gb": 88.4375,
+      "avg_sec_per_batch": 0.8472721730738464,
+      "selected_max_pixels": 802816
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.03254173952428121,
+      "valid_loss": 0.05336086933584604,
+      "valid_accuracy": 0.9511111111111111,
+      "invalid": 0,
+      "peak_reserved_gb": 88.439453125,
+      "avg_sec_per_batch": 0.8469762551697617,
+      "selected_max_pixels": 802816
+    }
+  ],
+  "best_accuracy": 0.9511111111111111,
+  "best_accuracy_epoch": 2,
+  "best_val_loss": 0.048621639336809123,
+  "best_loss_epoch": 1,
+  "actual_peak_reserved_gb": 88.439453125,
+  "inference": {
+    "best_accuracy": [
+      "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_deltanet_r16_lr2e5_aug_randomview/submission_best_accuracy.csv",
+      "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_deltanet_r16_lr2e5_aug_randomview/test_scores_best_accuracy.csv",
+      0.28562915325164795
+    ],
+    "best_loss": [
+      "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_deltanet_r16_lr2e5_aug_randomview/submission_best_loss.csv",
+      "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_deltanet_r16_lr2e5_aug_randomview/test_scores_best_loss.csv",
+      0.2862473726272583
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "model_id": "Qwen/Qwen3.8-27B",
+  "quant_mode": "bf16",
+  "selected_max_pixels": 802816,
+  "peak_reserved_gb": 79.03515625,
+  "candidate": {
+    "augmentation_probability": 0.8,
+    "best_accuracy": 0.9540740740740741,
+    "best_loss": 0.04831150148085726,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.05471622242807662,
+        "valid_loss": 0.04831150148085726,
+        "valid_accuracy": 0.9496296296296296,
+        "invalid": 0,
+        "peak_reserved_gb": 88.4375,
+        "avg_sec_per_batch": 0.8458099405128803,
+        "selected_max_pixels": 802816
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.03297214786420311,
+        "valid_loss": 0.054114642585937636,
+        "valid_accuracy": 0.9540740740740741,
+        "invalid": 0,
+        "peak_reserved_gb": 88.439453125,
+        "avg_sec_per_batch": 0.8454778124908487,
+        "selected_max_pixels": 802816
+      }
+    ]
+  },
+  "selection": {
+    "baseline_valid_accuracy": 0.951111,
+    "baseline_valid_loss": 0.0534,
+    "candidate_valid_accuracy": 0.9540740740740741,
+    "candidate_best_valid_loss": 0.04831150148085726,
+    "validation_rows": 675,
+    "material_gain": 0.002962962962962963,
+    "candidate_wins": true,
+    "selected_augmented_probability": 0.8,
+    "selected_reason": "candidate_aug80_improved_validation"
+  },
+  "final_training": {
+    "full_train_rows": 6714,
+    "selected_augmented_probability": 0.8,
+    "target_optimizer_steps": 1510,
+    "completed_optimizer_steps": 1510,
+    "processed_batches": 12074,
+    "mean_loss": 0.04528402138554685,
+    "time_guard_triggered": false,
+    "elapsed_hours": 6.084240383704503,
+    "peak_reserved_gb": 79.03515625,
+    "history": [
+      {
+        "epoch": 1,
+        "optimizer_step": 840,
+        "processed_batches": 6714,
+        "mean_loss": 0.05331310015918157,
+        "elapsed_hours": 4.8023894222577415
+      },
+      {
+        "epoch": 2,
+        "optimizer_step": 1510,
+        "processed_batches": 5360,
+        "mean_loss": 0.03522670144409471,
+        "elapsed_hours": 6.083852644893859
+      }
+    ],
+    "final_model_dir": "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_full6714_autofinal_9h/final_model"
+  },
+  "inference_mode": "constrained",
+  "submission": "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_full6714_autofinal_9h/submission_final_single_model.csv",
+  "scores": "/content/drive/MyDrive/vqa_checkpoints/qwen38_27b_ocr_90gb_full6714_autofinal_9h/test_scores_final_single_model.csv",
+  "median_inference_seconds": 0.28611600399017334,
+  "total_elapsed_hours": 6.655413948098818
+}

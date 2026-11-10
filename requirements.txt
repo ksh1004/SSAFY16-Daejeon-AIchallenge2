@@ -1,0 +1,25 @@
+# 학습·추론 환경: Google Colab G4 (NVIDIA RTX PRO 6000 Blackwell 96GB), Python 3.13, CUDA 12.8
+# torch / torchvision은 Colab 기본 설치본(2.11.0+cu128, Blackwell sm_120 지원)을 그대로 사용한다.
+# 주석의 버전은 실제 실행 로그에 기록된 버전이다.
+
+# --- 모델 학습·추론 ---
+transformers>=5.10.1        # 5.17.0 (Qwen3.5/3.8, Gemma 4는 v5 이상 필요)
+peft>=0.21.0                # 0.21.0
+accelerate>=1.15.0          # 1.15.0
+bitsandbytes>=0.50.2        # 0.50.2 (NF4 QLoRA, PagedAdamW8bit)
+torchao>=0.16.0             # 0.18.0
+flash-linear-attention      # 0.5.2 (Qwen3.5/3.8 Gated DeltaNet 가속 커널)
+# causal-conv1d 1.7.0은 소스 빌드가 필요하다:
+#   pip install git+https://github.com/Dao-AILab/causal-conv1d.git --no-build-isolation
+datasets
+scikit-learn
+pandas
+numpy
+pillow
+openpyxl                    # 외부 데이터 Excel 메타데이터 로드
+wandb                       # 0.30.0 (실험 기록, 선택)
+
+# --- 데이터 증강 (notebooks/01_data) ---
+albumentations
+opencv-python
+easyocr

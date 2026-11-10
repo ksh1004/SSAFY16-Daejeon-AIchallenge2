@@ -1,0 +1,11 @@
+{
+  "baseline_valid_accuracy": 0.951111,
+  "baseline_valid_loss": 0.0534,
+  "candidate_valid_accuracy": 0.9540740740740741,
+  "candidate_best_valid_loss": 0.04831150148085726,
+  "validation_rows": 675,
+  "material_gain": 0.002962962962962963,
+  "candidate_wins": true,
+  "selected_augmented_probability": 0.8,
+  "selected_reason": "candidate_aug80_improved_validation"
+}

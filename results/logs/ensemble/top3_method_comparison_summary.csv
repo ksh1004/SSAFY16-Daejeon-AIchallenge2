@@ -1,0 +1,7 @@
+method,changed_vs_baseline,changed_ratio,changed_when_top2_agree,changed_when_top2_disagree
+baseline_top3,0,0.0,0,0
+tuned_soft,39,0.00580875781948168,0,39
+temperature_soft,53,0.007893952934167411,0,53
+majority_gemma_tiebreak,60,0.008936550491510277,1,59
+hybrid_top2_guard,54,0.00804289544235925,1,53
+confidence_gated,52,0.0077450104259755735,1,51

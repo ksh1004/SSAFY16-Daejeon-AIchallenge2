@@ -1,0 +1,6 @@
+ensemble_name,changed_vs_current_best,changed_ratio
+current_best_top3,0,0.0
+score_tuned_balanced,31,0.004617217753946977
+score_tuned_main,39,0.00580875781948168
+score_tuned_gemma_heavy,72,0.010723860589812333
+score_tuned_with_qwen4b,38,0.005659815311289842

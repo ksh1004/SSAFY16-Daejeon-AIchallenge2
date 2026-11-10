@@ -1,0 +1,6 @@
+ensemble_name,weight_qwen38_27b,weight_qwen35_27b,weight_qwen35_4b,weight_gemma4_31b,weight_gemma4_e2b
+current_best_top3,0.4,0.25,0.0,0.35,0.0
+score_tuned_balanced,0.4,0.2,0.0,0.4,0.0
+score_tuned_main,0.4,0.18,0.0,0.42,0.0
+score_tuned_gemma_heavy,0.39,0.15,0.0,0.46,0.0
+score_tuned_with_qwen4b,0.39,0.18,0.02,0.41,0.0

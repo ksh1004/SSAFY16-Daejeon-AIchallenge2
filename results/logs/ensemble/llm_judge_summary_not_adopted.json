@@ -1,0 +1,22 @@
+{
+  "model_id": "Qwen/Qwen3.8-27B",
+  "quant_mode": "bf16",
+  "min_pixels": 147456,
+  "max_pixels": 802816,
+  "image_size": 896,
+  "max_new_tokens": 2,
+  "judge_batch_size": 1,
+  "judge_max_retries": 1,
+  "total_rows": 6714,
+  "consensus_rows": 6428,
+  "conflict_rows": 286,
+  "judge_calls": 286,
+  "conflict_ratio": 0.042597557342865654,
+  "avg_judge_latency_sec": 0.40611609378894725,
+  "invalid_outputs": 0,
+  "submission_path": "/content/drive/MyDrive/qwen38_27b_vqa_ensemble_judge/ensemble_submission.csv",
+  "detailed_results_path": "/content/drive/MyDrive/qwen38_27b_vqa_ensemble_judge/ensemble_detailed_results.csv",
+  "conflict_results_path": "/content/drive/MyDrive/qwen38_27b_vqa_ensemble_judge/ensemble_conflicts_only.csv",
+  "prompt_rule": "user_provided_prompt_with_random_shuffle_of_three_opinions",
+  "timestamp": "2026-09-23 03:00:39"
+}
